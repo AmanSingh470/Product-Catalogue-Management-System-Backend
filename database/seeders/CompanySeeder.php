@@ -1,5 +1,4 @@
 <?php
-
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
@@ -10,10 +9,14 @@ class CompanySeeder extends Seeder
     public function run(): void
     {
         DB::table('companies')->insert([
-            ['name' => 'Tata', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Reliance', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Infosys', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Wipro', 'created_at' => now(), 'updated_at' => now()],
+                ['name' => 'Maruti Suzuki', 'created_at' => now(), 'updated_at' => now()],
+                ['name' => 'Tata Motors', 'created_at' => now(), 'updated_at' => now()],
+                ['name' => 'Mahindra & Mahindra', 'created_at' => now(), 'updated_at' => now()],
+                ['name' => 'Hyundai Motors', 'created_at' => now(), 'updated_at' => now()],
+                ['name' => 'Honda Cars', 'created_at' => now(), 'updated_at' => now()],
+                ['name' => 'Toyota Kirloskar', 'created_at' => now(), 'updated_at' => now()],
+                ['name' => 'Ashok Leyland', 'created_at' => now(), 'updated_at' => now()],
+                ['name' => 'Bajaj Auto', 'created_at' => now(), 'updated_at' => now()],
         ]);
     }
 }
