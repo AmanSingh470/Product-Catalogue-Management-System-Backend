@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Product extends Model
 {
+    use HasFactory;
     protected $table = 'products';
 
     protected $fillable = [
@@ -13,7 +15,7 @@ class Product extends Model
         'description',
         'category_id',
         'segment_id',
-        'divison_id',
+        'division_id',
         'company_id',
         'contact_person_id',
         'main_advantages',
@@ -25,7 +27,7 @@ class Product extends Model
     protected $casts = [
         'category_id' => 'integer',
         'segment_id' => 'integer',
-        'divison_id' => 'integer',
+        'division_id' => 'integer',
         'company_id' => 'integer',
         'contact_person_id' => 'integer',
     ];
@@ -44,9 +46,9 @@ class Product extends Model
         return $this->belongsTo(Segment::class);
     }
 
-    public function divison()
+    public function division()
     {
-        return $this->belongsTo(Divison::class);
+        return $this->belongsTo(Division::class);
     }
 
     public function company()
@@ -54,7 +56,7 @@ class Product extends Model
         return $this->belongsTo(Company::class);
     }
 
-    public function contactPerson()
+    public function companyContactPerson()
     {
         return $this->belongsTo(CompanyContactPerson::class, 'contact_person_id');
     }

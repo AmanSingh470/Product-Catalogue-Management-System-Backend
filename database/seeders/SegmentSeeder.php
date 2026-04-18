@@ -1,0 +1,18 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class SegmentSeeder extends Seeder
+{
+    public function run(): void
+    {
+        DB::table('segments')->insert([
+            ['name' => 'Premium', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Mid-Range', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Budget', 'created_at' => now(), 'updated_at' => now()],
+        ]);
+    }
+}

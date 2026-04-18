@@ -11,9 +11,9 @@ class ProductRepository
         return Product::with([
             'category',
             'segment',
-            'divison',
+            'division',
             'company',
-            'contactPerson',
+            'companyContactPerson',
         ])->get();
     }
 

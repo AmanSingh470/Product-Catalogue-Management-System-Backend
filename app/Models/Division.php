@@ -2,10 +2,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Divison extends Model
+
+class Division extends Model
 {
-    protected $table = 'divisons';
+    use HasFactory;
+    protected $table = 'divisions';
 
     public function products()
     {
