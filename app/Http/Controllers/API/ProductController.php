@@ -20,6 +20,12 @@ class ProductController extends Controller
         return ProductResource::collection(
             $this->service->list()
         );
+        
+        // // or
+        // $products = $this->service->list();
+        // return $products->map(function ($product) {
+        //     return new ProductResource($product);
+        // });
     }
 
     public function store(Request $request)

@@ -60,4 +60,9 @@ class Product extends Model
     {
         return $this->belongsTo(CompanyContactPerson::class, 'contact_person_id');
     }
+
+    public function productMedia()
+    {
+        return $this->hasMany(ProductMedia::class, 'product_id');
+    }
 }

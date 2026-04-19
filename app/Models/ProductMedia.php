@@ -4,18 +4,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-
-class Division extends Model
+class ProductMedia extends Model
 {
     use HasFactory;
-    protected $table = 'divisions';
+    protected $table = 'product_media';
 
     public function products()
     {
         return $this->hasMany(Product::class);
-    }
-    public function divisionMedia()
-    {
-        return $this->hasOne(DivisionMedia::class);
     }
 }

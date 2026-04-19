@@ -14,6 +14,7 @@ class ProductRepository
             'division',
             'company',
             'companyContactPerson',
+            'productMedia'
         ])->get();
     }
 

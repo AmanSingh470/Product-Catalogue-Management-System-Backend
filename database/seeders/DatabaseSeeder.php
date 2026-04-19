@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             CompanyContactPersonSeeder::class,
             ProductSeeder::class,
             ProductMediaSeeder::class,
+            DivisionMediaSeeder::class,
         ]);
     }
 }
