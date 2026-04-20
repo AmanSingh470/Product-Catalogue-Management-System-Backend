@@ -4,11 +4,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class PendingProductsRequests extends Model
+class ProductRequests extends Model
 {
     use HasFactory;
-    protected $table = 'pending_products_requests';
-
+    protected $table = 'product_requests';
+    protected $fillable = [
+        'title',
+        'category_id',
+        'company_id',
+        'division_id',
+        'segment_id',
+        'description',
+    ];
     public function cateogry()
     {
         return $this->hasOne(Cateogry::class);

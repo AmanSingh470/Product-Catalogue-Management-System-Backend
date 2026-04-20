@@ -8,11 +8,17 @@ use App\Models\Segment;
 use App\Models\Company;
 use App\Models\CompanyContactPerson;
 
+use Illuminate\Support\Facades\Log;
+
 class FilterProductRepository
 {
     public function getAll()
     {
-        return [
+        $temp = Division::with('divisionMedia')
+                                ->withCount(['products as total_products'])
+                                ->select('id', 'name', 'description')
+                                ->get();
+        $res = [
             'all'            => Division::with('divisionMedia')
                                 ->select('id', 'name', 'description')
                                 ->get(),
@@ -22,5 +28,7 @@ class FilterProductRepository
             'companies'      => Company::select('id', 'name')->get(),
             'contactPersons' => CompanyContactPerson::select('id', 'name')->get(),
         ];
+        Log::info($temp);
+        return $res;
     }
 }

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('pending_products_requests', function (Blueprint $table) {
+        Schema::create('product_requests', function (Blueprint $table) {
             $table->id();
             $table->string('title', 100)->nullable();
             $table->foreignId('category_id')->nullable()
@@ -29,6 +29,6 @@ return new class extends Migration {
 
     public function down(): void
     {
-        Schema::dropIfExists('pending_products_requests');
+        Schema::dropIfExists('product_requests');
     }
 };
