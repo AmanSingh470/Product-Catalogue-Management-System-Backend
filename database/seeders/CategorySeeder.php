@@ -9,11 +9,13 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         DB::table('categories')->insert([
-            ['name' => 'Electrical & Electronics', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Interior & Exterior Systems', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Powertrain & Drivetrain', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Structural & Metal Components', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Aftermarket & Services', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Premium', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Mid-Range', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Budget', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Luxury', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Economy', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Commercial', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'Heavy-Duty', 'created_at' => now(), 'updated_at' => now()]
         ]);
     }
 }
