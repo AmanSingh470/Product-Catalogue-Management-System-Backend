@@ -1,0 +1,9 @@
+[
+  { "name": "Premium" },
+  { "name": "Mid-Range" },
+  { "name": "Budget" },
+  { "name": "Luxury" },
+  { "name": "Economy" },
+  { "name": "Commercial" },
+  { "name": "Heavy-Aman" }
+]

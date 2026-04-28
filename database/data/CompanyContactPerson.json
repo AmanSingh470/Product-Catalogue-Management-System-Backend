@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Aman Singh",
+    "email": "aman@mail.com",
+    "function": "Manager",
+    "company_id": 1
+  },
+  {
+    "name": "Rohit Sharma",
+    "email": "rohit@mail.com",
+    "function": "Sales",
+    "company_id": 2
+  },
+  {
+    "name": "Neha Verma",
+    "email": "neha@mail.com",
+    "function": "HR",
+    "company_id": 3
+  },
+  {
+    "name": "Priya Kapoor",
+    "email": "priya@mail.com",
+    "function": "Admin",
+    "company_id": 4
+  },
+  {
+    "name": "Arjun Mehta",
+    "email": "arjun@mail.com",
+    "function": "Operations",
+    "company_id": 1
+  },
+  {
+    "name": "Sneha Iyer",
+    "email": "sneha@mail.com",
+    "function": "Finance",
+    "company_id": 2
+  },
+  {
+    "name": "Karan Malhotra",
+    "email": "karan@mail.com",
+    "function": "Marketing",
+    "company_id": 3
+  },
+  {
+    "name": "Pooja Sharma",
+    "email": "pooja@mail.com",
+    "function": "Support",
+    "company_id": 4
+  },
+  {
+    "name": "Rahul Gupta",
+    "email": "rahul@mail.com",
+    "function": "IT",
+    "company_id": 1
+  },
+  {
+    "name": "Anjali Desai",
+    "email": "anjali@mail.com",
+    "function": "Legal",
+    "company_id": 2
+  }
+]

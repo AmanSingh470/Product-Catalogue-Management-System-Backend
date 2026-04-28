@@ -3,19 +3,23 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class CategorySeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('categories')->insert([
-            ['name' => 'Premium', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Mid-Range', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Budget', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Luxury', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Economy', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Commercial', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Heavy-Duty', 'created_at' => now(), 'updated_at' => now()]
-        ]);
+        $json      = File::get(database_path('data/Category.json'));
+        $categories = json_decode($json, true);
+        $data = [];
+
+        foreach ($categories as $category) {
+            $data[] = [
+                'name'       => $category['name'],
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }
+        DB::table('categories')->insert($data);
     }
 }

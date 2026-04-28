@@ -12,9 +12,9 @@ class ProductService
         $this->repo = $repo;
     }
 
-    public function list()
+    public function list($limit=10)
     {
-        return $this->repo->getAll();
+        return $this->repo->paginate($limit);
     }
 
     public function store($data)

@@ -3,17 +3,23 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class SegmentSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('segments')->insert([
-            ['name' => 'Electrical & Electronics', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Interior & Exterior Systems', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Powertrain & Drivetrain', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Structural & Metal Components', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Aftermarket & Services', 'created_at' => now(), 'updated_at' => now()]
-        ]);
+        $json     = File::get(database_path('data/Segment.json'));
+        $Segments = json_decode($json, true);
+        $data     = [];
+
+        foreach ($Segments as $Segment) {
+            $data[] = [
+                'name'             => $Segment['name'],
+                'created_at'        => now(),
+                'updated_at'        => now(),
+            ];
+        }
+        DB::table('segments')->insert($data);
     }
 }

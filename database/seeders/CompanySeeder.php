@@ -3,20 +3,24 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class CompanySeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('companies')->insert([
-                ['name' => 'Maruti Suzuki', 'created_at' => now(), 'updated_at' => now()],
-                ['name' => 'Tata Motors', 'created_at' => now(), 'updated_at' => now()],
-                ['name' => 'Mahindra & Mahindra', 'created_at' => now(), 'updated_at' => now()],
-                ['name' => 'Hyundai Motors', 'created_at' => now(), 'updated_at' => now()],
-                ['name' => 'Honda Cars', 'created_at' => now(), 'updated_at' => now()],
-                ['name' => 'Toyota Kirloskar', 'created_at' => now(), 'updated_at' => now()],
-                ['name' => 'Ashok Leyland', 'created_at' => now(), 'updated_at' => now()],
-                ['name' => 'Bajaj Auto', 'created_at' => now(), 'updated_at' => now()],
-        ]);
+
+        $json                  = File::get(database_path('data/Company.json'));
+        $companies = json_decode($json, true);
+        $data                  = [];
+
+        foreach ($companies as $company) {
+            $data[] = [
+                'name'       => $company['name'],
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+        }
+        DB::table('companies')->insert($data);
     }
 }

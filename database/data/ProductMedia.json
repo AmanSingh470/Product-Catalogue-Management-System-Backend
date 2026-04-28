@@ -1,0 +1,22 @@
+[
+  { "product_id": 1, "image": "1_Wiring_Harness_Kit.png" },
+  { "product_id": 2, "image": "2_LED_Headlamp.png" },
+  { "product_id": 3, "image": "3_Car_Dashboard_Panel.png" },
+  { "product_id": 4, "image": "4_Rear_View_Mirror.png" },
+  { "product_id": 5, "image": "5_Gearbox_Assembly.png" },
+  { "product_id": 6, "image": "6_Engine_Mount.png" },
+  { "product_id": 7, "image": "7_Tail_Light_Unit.png" },
+  { "product_id": 8, "image": "8_Plastic_Bumper.png" },
+  { "product_id": 9, "image": "9_Side_Mirror_Assembly.png" },
+  { "product_id": 10, "image": "10_Instrument_Cluster.png" },
+  { "product_id": 11, "image": "11_Chassis_Frame.png" },
+  { "product_id": 12, "image": "12_Brake_Disc.png" },
+  { "product_id": 13, "image": "13_Fuel_Tank.png" },
+  { "product_id": 14, "image": "14_Steering_Wheel.png" },
+  { "product_id": 15, "image": "15_Clutch_Plate.png" },
+  { "product_id": 16, "image": "16_Door_Panel.png" },
+  { "product_id": 17, "image": "17_Battery_Cable_Set.png" },
+  { "product_id": 18, "image": "18_Fog_Lamp.png" },
+  { "product_id": 19, "image": "19_Axle_Shaft.png" },
+  { "product_id": 20, "image": "20_Metal_Bracket.png" }
+]

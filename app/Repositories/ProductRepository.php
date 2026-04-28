@@ -1,12 +1,11 @@
 <?php
-
 namespace App\Repositories;
 
 use App\Models\Product;
 
 class ProductRepository
 {
-    public function getAll()
+    public function getAll($limit = 10)
     {
         return Product::with([
             'category',
@@ -14,10 +13,22 @@ class ProductRepository
             'division',
             'company',
             'companyContactPerson',
-            'productMedia'
-        ])->get();
+            'productMedia',
+        ])->paginate($limit);
     }
 
+    public function paginate($limit = 10)
+    {
+        return Product::with([
+            'category',
+            'segment',
+            'division',
+            'company',
+            'companyContactPerson',
+            'productMedia',
+        ])->paginate($limit);
+    }
+    
     public function findById($id)
     {
         return Product::findOrFail($id);

@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Wiring Harness Kit",
+    "description": "Automotive electrical wiring system",
+    "category_id": 1,
+    "division_id": 1,
+    "segment_id": 1,
+    "company_id": 1,
+    "contact_person_id": 1
+  },
+  {
+    "title": "LED Headlamp",
+    "description": "Vehicle lighting component",
+    "category_id": 1,
+    "division_id": 4,
+    "segment_id": 1,
+    "company_id": 2,
+    "contact_person_id": 2
+  },
+  {
+    "title": "Car Dashboard Panel",
+    "description": "Interior polymer component",
+    "category_id": 2,
+    "division_id": 3,
+    "segment_id": 2,
+    "company_id": 3,
+    "contact_person_id": 3
+  },
+  {
+    "title": "Rear View Mirror",
+    "description": "Automotive vision system",
+    "category_id": 2,
+    "division_id": 2,
+    "segment_id": 2,
+    "company_id": 4,
+    "contact_person_id": 4
+  },
+  {
+    "title": "Gearbox Assembly",
+    "description": "Transmission system component",
+    "category_id": 3,
+    "division_id": 5,
+    "segment_id": 3,
+    "company_id": 5,
+    "contact_person_id": 5
+  },
+  {
+    "title": "Engine Mount",
+    "description": "Engine support component",
+    "category_id": 4,
+    "division_id": 5,
+    "segment_id": 2,
+    "company_id": 6,
+    "contact_person_id": 6
+  },
+  {
+    "title": "Tail Light Unit",
+    "description": "Rear lighting system",
+    "category_id": 1,
+    "division_id": 4,
+    "segment_id": 1,
+    "company_id": 7,
+    "contact_person_id": 7
+  },
+  {
+    "title": "Plastic Bumper",
+    "description": "Exterior polymer component",
+    "category_id": 2,
+    "division_id": 3,
+    "segment_id": 2,
+    "company_id": 8,
+    "contact_person_id": 8
+  },
+  {
+    "title": "Side Mirror Assembly",
+    "description": "Vehicle side mirror system",
+    "category_id": 2,
+    "division_id": 2,
+    "segment_id": 2,
+    "company_id": 1,
+    "contact_person_id": 9
+  },
+  {
+    "title": "Instrument Cluster",
+    "description": "Dashboard electronic display",
+    "category_id": 1,
+    "division_id": 1,
+    "segment_id": 1,
+    "company_id": 2,
+    "contact_person_id": 10
+  },
+  {
+    "title": "Chassis Frame",
+    "description": "Structural metal component",
+    "category_id": 4,
+    "division_id": 5,
+    "segment_id": 2,
+    "company_id": 3,
+    "contact_person_id": 1
+  },
+  {
+    "title": "Brake Disc",
+    "description": "Vehicle braking component",
+    "category_id": 4,
+    "division_id": 5,
+    "segment_id": 2,
+    "company_id": 4,
+    "contact_person_id": 2
+  },
+  {
+    "title": "Fuel Tank",
+    "description": "Fuel storage component",
+    "category_id": 4,
+    "division_id": 5,
+    "segment_id": 2,
+    "company_id": 5,
+    "contact_person_id": 3
+  },
+  {
+    "title": "Steering Wheel",
+    "description": "Driver control component",
+    "category_id": 2,
+    "division_id": 3,
+    "segment_id": 2,
+    "company_id": 6,
+    "contact_person_id": 4
+  },
+  {
+    "title": "Clutch Plate",
+    "description": "Transmission engagement component",
+    "category_id": 3,
+    "division_id": 5,
+    "segment_id": 3,
+    "company_id": 7,
+    "contact_person_id": 5
+  },
+  {
+    "title": "Door Panel",
+    "description": "Interior door component",
+    "category_id": 2,
+    "division_id": 3,
+    "segment_id": 2,
+    "company_id": 8,
+    "contact_person_id": 6
+  },
+  {
+    "title": "Battery Cable Set",
+    "description": "Electrical connection cables",
+    "category_id": 1,
+    "division_id": 1,
+    "segment_id": 1,
+    "company_id": 1,
+    "contact_person_id": 7
+  },
+  {
+    "title": "Fog Lamp",
+    "description": "Auxiliary lighting system",
+    "category_id": 1,
+    "division_id": 4,
+    "segment_id": 1,
+    "company_id": 2,
+    "contact_person_id": 8
+  },
+  {
+    "title": "Axle Shaft",
+    "description": "Drivetrain power transmission component",
+    "category_id": 3,
+    "division_id": 5,
+    "segment_id": 3,
+    "company_id": 3,
+    "contact_person_id": 9
+  },
+  {
+    "title": "Metal Bracket",
+    "description": "Support and mounting component",
+    "category_id": 4,
+    "division_id": 5,
+    "segment_id": 2,
+    "company_id": 4,
+    "contact_person_id": 10
+  }
+]

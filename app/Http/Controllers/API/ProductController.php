@@ -2,9 +2,9 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ProductResource;
 use App\Services\ProductService;
 use Illuminate\Http\Request;
-use App\Http\Resources\ProductResource;
 
 class ProductController extends Controller
 {
@@ -15,17 +15,30 @@ class ProductController extends Controller
         $this->service = $service;
     }
 
-    public function index()
+    // public function index()
+    // {
+    //     return ProductResource::collection(
+    //         $this->service->list()
+    //     );
+
+    //     // // or
+    //     // $products = $this->service->list();
+    //     // return $products->map(function ($product) {
+    //     //     return new ProductResource($product);
+    //     // });
+    // }
+    
+    public function index(Request $request)
     {
-        return ProductResource::collection(
-            $this->service->list()
-        );
-        
-        // // or
-        // $products = $this->service->list();
-        // return $products->map(function ($product) {
-        //     return new ProductResource($product);
-        // });
+        $limit = $request->get('limit', 10);
+
+        $products = $this->service->list($limit);
+
+        return response()->json([
+            'items'        => ProductResource::collection($products),
+            'current_page' => $products->currentPage(),
+            'hasMore'      => $products->hasMorePages(),
+        ]);
     }
 
     public function store(Request $request)
@@ -54,8 +67,8 @@ class ProductController extends Controller
         $this->service->delete($id);
 
         return response()->json([
-            'status' => true,
-            'message' => 'Deleted successfully'
+            'status'  => true,
+            'message' => 'Deleted successfully',
         ]);
     }
 }
