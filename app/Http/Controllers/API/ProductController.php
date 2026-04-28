@@ -30,7 +30,7 @@ class ProductController extends Controller
     
     public function index(Request $request)
     {
-        $limit = $request->get('limit', 10);
+        $limit = $request->get('limit', 32);
 
         $products = $this->service->list($limit);
 

@@ -5,19 +5,19 @@ use App\Models\Product;
 
 class ProductRepository
 {
-    public function getAll($limit = 10)
-    {
-        return Product::with([
-            'category',
-            'segment',
-            'division',
-            'company',
-            'companyContactPerson',
-            'productMedia',
-        ])->paginate($limit);
-    }
+    // public function getAll($limit = 10)
+    // {
+    //     return Product::with([
+    //         'category',
+    //         'segment',
+    //         'division',
+    //         'company',
+    //         'companyContactPerson',
+    //         'productMedia',
+    //     ])->paginate($limit);
+    // }
 
-    public function paginate($limit = 10)
+    public function paginate($limit = 32)
     {
         return Product::with([
             'category',

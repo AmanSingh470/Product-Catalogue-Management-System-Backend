@@ -9,17 +9,18 @@ class ProductMediaSeeder extends Seeder
 {
     public function run(): void
     {
-        $json      = File::get(database_path('data/ProductMedia.json'));
+        $json          = File::get(database_path('data/ProductMedia.json'));
         $ProductMedias = json_decode($json, true);
-        $data      = [];
+        $data          = [];
 
         foreach ($ProductMedias as $ProductMedia) {
             $data[] = [
-                'product_id'        => $ProductMedia['product_id'],
-                'image' => $ProductMedia['image'],
-                'created_at'  => now(),
-                'updated_at'  => now(),
+                'product_id' => $ProductMedia['product_id'],
+                'image'      => $ProductMedia['image'],
+                'created_at' => now(),
+                'updated_at' => now(),
             ];
         }
+        DB::table('product_media')->insert($data);
     }
 }
