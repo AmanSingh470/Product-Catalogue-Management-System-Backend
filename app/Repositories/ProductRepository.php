@@ -17,18 +17,36 @@ class ProductRepository
     //     ])->paginate($limit);
     // }
 
-    public function paginate($limit = 32)
+    public function paginate($filters = [], $limit)
     {
-        return Product::with([
+        $query = Product::with([
             'category',
             'segment',
             'division',
             'company',
             'companyContactPerson',
             'productMedia',
-        ])->paginate($limit);
+        ]);
+
+        if (! empty($filters['division'])) {
+            $query->whereIn('division_id', $filters['division']);
+        }
+
+        if (! empty($filters['company'])) {
+            $query->whereIn('company_id', $filters['company']);
+        }
+
+        if (! empty($filters['segment'])) {
+            $query->whereIn('segment_id', $filters['segment']);
+        }
+
+        if (! empty($filters['search'])) {
+            $query->where('title', 'like', '%' . $filters['search'] . '%');
+        }
+
+        return $query->paginate($limit);
     }
-    
+
     public function findById($id)
     {
         return Product::findOrFail($id);

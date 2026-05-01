@@ -1,7 +1,137 @@
 [
-  { "name": "Electrical & Electronics" },
-  { "name": "Interior & Exterior Systems" },
-  { "name": "Powertrain & Drivetrain" },
-  { "name": "Structural & Metal Components" },
-  { "name": "Aftermarket & Services" }
+  {
+    "name": "Electrical & Electronics"
+  },
+  {
+    "name": "Interior & Exterior Systems"
+  },
+  {
+    "name": "Powertrain & Drivetrain"
+  },
+  {
+    "name": "Structural & Metal Components"
+  },
+  {
+    "name": "Aftermarket & Services"
+  },
+  {
+    "name": "Segment 6"
+  },
+  {
+    "name": "Segment 7"
+  },
+  {
+    "name": "Segment 8"
+  },
+  {
+    "name": "Segment 9"
+  },
+  {
+    "name": "Segment 10"
+  },
+  {
+    "name": "Segment 11"
+  },
+  {
+    "name": "Segment 12"
+  },
+  {
+    "name": "Segment 13"
+  },
+  {
+    "name": "Segment 14"
+  },
+  {
+    "name": "Segment 15"
+  },
+  {
+    "name": "Segment 16"
+  },
+  {
+    "name": "Segment 17"
+  },
+  {
+    "name": "Segment 18"
+  },
+  {
+    "name": "Segment 19"
+  },
+  {
+    "name": "Segment 20"
+  },
+  {
+    "name": "Segment 21"
+  },
+  {
+    "name": "Segment 22"
+  },
+  {
+    "name": "Segment 23"
+  },
+  {
+    "name": "Segment 24"
+  },
+  {
+    "name": "Segment 25"
+  },
+  {
+    "name": "Segment 26"
+  },
+  {
+    "name": "Segment 27"
+  },
+  {
+    "name": "Segment 28"
+  },
+  {
+    "name": "Segment 29"
+  },
+  {
+    "name": "Segment 30"
+  },
+  {
+    "name": "Segment 31"
+  },
+  {
+    "name": "Segment 32"
+  },
+  {
+    "name": "Segment 33"
+  },
+  {
+    "name": "Segment 34"
+  },
+  {
+    "name": "Segment 35"
+  },
+  {
+    "name": "Segment 36"
+  },
+  {
+    "name": "Segment 37"
+  },
+  {
+    "name": "Segment 38"
+  },
+  {
+    "name": "Segment 39"
+  },
+  {
+    "name": "Segment 40"
+  },
+  {
+    "name": "Segment 41"
+  },
+  {
+    "name": "Segment 42"
+  },
+  {
+    "name": "Segment 43"
+  },
+  {
+    "name": "Segment 44"
+  },
+  {
+    "name": "Segment 45"
+  }
 ]

@@ -1,9 +1,113 @@
 [
-  { "name": "Premium" },
-  { "name": "Mid-Range" },
-  { "name": "Budget" },
-  { "name": "Luxury" },
-  { "name": "Economy" },
-  { "name": "Commercial" },
-  { "name": "Heavy-Aman" }
+  {
+    "name": "Premium"
+  },
+  {
+    "name": "Mid-Range"
+  },
+  {
+    "name": "Budget"
+  },
+  {
+    "name": "Luxury"
+  },
+  {
+    "name": "Economy"
+  },
+  {
+    "name": "Commercial"
+  },
+  {
+    "name": "Heavy-Aman"
+  },
+  {
+    "name": "Category 8"
+  },
+  {
+    "name": "Category 9"
+  },
+  {
+    "name": "Category 10"
+  },
+  {
+    "name": "Category 11"
+  },
+  {
+    "name": "Category 12"
+  },
+  {
+    "name": "Category 13"
+  },
+  {
+    "name": "Category 14"
+  },
+  {
+    "name": "Category 15"
+  },
+  {
+    "name": "Category 16"
+  },
+  {
+    "name": "Category 17"
+  },
+  {
+    "name": "Category 18"
+  },
+  {
+    "name": "Category 19"
+  },
+  {
+    "name": "Category 20"
+  },
+  {
+    "name": "Category 21"
+  },
+  {
+    "name": "Category 22"
+  },
+  {
+    "name": "Category 23"
+  },
+  {
+    "name": "Category 24"
+  },
+  {
+    "name": "Category 25"
+  },
+  {
+    "name": "Category 26"
+  },
+  {
+    "name": "Category 27"
+  },
+  {
+    "name": "Category 28"
+  },
+  {
+    "name": "Category 29"
+  },
+  {
+    "name": "Category 30"
+  },
+  {
+    "name": "Category 31"
+  },
+  {
+    "name": "Category 32"
+  },
+  {
+    "name": "Category 33"
+  },
+  {
+    "name": "Category 34"
+  },
+  {
+    "name": "Category 35"
+  },
+  {
+    "name": "Category 36"
+  },
+  {
+    "name": "Category 37"
+  }
 ]

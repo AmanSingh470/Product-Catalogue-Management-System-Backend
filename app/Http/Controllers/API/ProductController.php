@@ -27,48 +27,50 @@ class ProductController extends Controller
     //     //     return new ProductResource($product);
     //     // });
     // }
-    
+
     public function index(Request $request)
     {
-        $limit = $request->get('limit', 32);
+        $limit = 32;
 
-        $products = $this->service->list($limit);
+        $parseQuery = function ($queryString) {
+            $result = [];
+
+            foreach (explode('&', $queryString) as $pair) {
+                if ($pair === '') {
+                    continue;
+                }
+
+                [$key, $value] = array_pad(explode('=', $pair, 2), 2, '');
+
+                $key   = urldecode($key);
+                $value = urldecode($value);
+
+                if ($key === '') {
+                    continue;
+                }
+
+                $result[$key][] = $value;
+            }
+
+            return $result;
+        };
+
+        $parsed = $parseQuery($request->server->get('QUERY_STRING') ?? '');
+
+        $filters = [
+            'division' => $parsed['division'] ?? [],
+            'category' => $parsed['category'] ?? [],
+            'segment'  => $parsed['segment'] ?? [],
+            'company'  => $parsed['company'] ?? [],
+            'search'   => $request->query('search'),
+        ];
+
+        $products = $this->service->list($filters, $limit);
 
         return response()->json([
             'items'        => ProductResource::collection($products),
             'current_page' => $products->currentPage(),
             'hasMore'      => $products->hasMorePages(),
-        ]);
-    }
-
-    public function store(Request $request)
-    {
-        return new ProductResource(
-            $this->service->store($request->all())
-        );
-    }
-
-    public function show($id)
-    {
-        return new ProductResource(
-            $this->service->show($id)
-        );
-    }
-
-    public function update(Request $request, $id)
-    {
-        return new ProductResource(
-            $this->service->update($id, $request->all())
-        );
-    }
-
-    public function destroy($id)
-    {
-        $this->service->delete($id);
-
-        return response()->json([
-            'status'  => true,
-            'message' => 'Deleted successfully',
         ]);
     }
 }

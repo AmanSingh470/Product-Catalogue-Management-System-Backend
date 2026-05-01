@@ -18,5 +18,265 @@
   {
     "name": "Metal & Precision Components Division",
     "description": "Handles metal fabrication, machining, and structural components"
+  },
+  {
+    "name": "Interior Systems Division 6",
+    "description": "Interior Systems Division 6 for automotive manufacturing"
+  },
+  {
+    "name": "Polymer Modules Division 7",
+    "description": "Polymer Modules Division 7 for automotive manufacturing"
+  },
+  {
+    "name": "Sensor Systems Division 8",
+    "description": "Sensor Systems Division 8 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 9",
+    "description": "Lighting Systems Division 9 for automotive manufacturing"
+  },
+  {
+    "name": "Wiring Harness Division 10",
+    "description": "Wiring Harness Division 10 for automotive manufacturing"
+  },
+  {
+    "name": "Drivetrain Systems Division 11",
+    "description": "Drivetrain Systems Division 11 for automotive manufacturing"
+  },
+  {
+    "name": "Sensor Systems Division 12",
+    "description": "Sensor Systems Division 12 for automotive manufacturing"
+  },
+  {
+    "name": "Battery Systems Division 13",
+    "description": "Battery Systems Division 13 for automotive manufacturing"
+  },
+  {
+    "name": "Powertrain Systems Division 14",
+    "description": "Powertrain Systems Division 14 for automotive manufacturing"
+  },
+  {
+    "name": "Powertrain Systems Division 15",
+    "description": "Powertrain Systems Division 15 for automotive manufacturing"
+  },
+  {
+    "name": "Battery Systems Division 16",
+    "description": "Battery Systems Division 16 for automotive manufacturing"
+  },
+  {
+    "name": "Metal Fabrication Division 17",
+    "description": "Metal Fabrication Division 17 for automotive manufacturing"
+  },
+  {
+    "name": "Exterior Systems Division 18",
+    "description": "Exterior Systems Division 18 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 19",
+    "description": "Lighting Systems Division 19 for automotive manufacturing"
+  },
+  {
+    "name": "Metal Fabrication Division 20",
+    "description": "Metal Fabrication Division 20 for automotive manufacturing"
+  },
+  {
+    "name": "Powertrain Systems Division 21",
+    "description": "Powertrain Systems Division 21 for automotive manufacturing"
+  },
+  {
+    "name": "Wiring Harness Division 22",
+    "description": "Wiring Harness Division 22 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 23",
+    "description": "Lighting Systems Division 23 for automotive manufacturing"
+  },
+  {
+    "name": "Battery Systems Division 24",
+    "description": "Battery Systems Division 24 for automotive manufacturing"
+  },
+  {
+    "name": "Sensor Systems Division 25",
+    "description": "Sensor Systems Division 25 for automotive manufacturing"
+  },
+  {
+    "name": "Metal Fabrication Division 26",
+    "description": "Metal Fabrication Division 26 for automotive manufacturing"
+  },
+  {
+    "name": "Interior Systems Division 27",
+    "description": "Interior Systems Division 27 for automotive manufacturing"
+  },
+  {
+    "name": "Drivetrain Systems Division 28",
+    "description": "Drivetrain Systems Division 28 for automotive manufacturing"
+  },
+  {
+    "name": "Sensor Systems Division 29",
+    "description": "Sensor Systems Division 29 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 30",
+    "description": "Lighting Systems Division 30 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 31",
+    "description": "Lighting Systems Division 31 for automotive manufacturing"
+  },
+  {
+    "name": "Exterior Systems Division 32",
+    "description": "Exterior Systems Division 32 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 33",
+    "description": "Lighting Systems Division 33 for automotive manufacturing"
+  },
+  {
+    "name": "Battery Systems Division 34",
+    "description": "Battery Systems Division 34 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 35",
+    "description": "Lighting Systems Division 35 for automotive manufacturing"
+  },
+  {
+    "name": "Drivetrain Systems Division 36",
+    "description": "Drivetrain Systems Division 36 for automotive manufacturing"
+  },
+  {
+    "name": "Wiring Harness Division 37",
+    "description": "Wiring Harness Division 37 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 38",
+    "description": "Lighting Systems Division 38 for automotive manufacturing"
+  },
+  {
+    "name": "Sensor Systems Division 39",
+    "description": "Sensor Systems Division 39 for automotive manufacturing"
+  },
+  {
+    "name": "Thermal Systems Division 40",
+    "description": "Thermal Systems Division 40 for automotive manufacturing"
+  },
+  {
+    "name": "Thermal Systems Division 41",
+    "description": "Thermal Systems Division 41 for automotive manufacturing"
+  },
+  {
+    "name": "Exterior Systems Division 42",
+    "description": "Exterior Systems Division 42 for automotive manufacturing"
+  },
+  {
+    "name": "Drivetrain Systems Division 43",
+    "description": "Drivetrain Systems Division 43 for automotive manufacturing"
+  },
+  {
+    "name": "Metal Fabrication Division 44",
+    "description": "Metal Fabrication Division 44 for automotive manufacturing"
+  },
+  {
+    "name": "Wiring Harness Division 45",
+    "description": "Wiring Harness Division 45 for automotive manufacturing"
+  },
+  {
+    "name": "Wiring Harness Division 46",
+    "description": "Wiring Harness Division 46 for automotive manufacturing"
+  },
+  {
+    "name": "Metal Fabrication Division 47",
+    "description": "Metal Fabrication Division 47 for automotive manufacturing"
+  },
+  {
+    "name": "Interior Systems Division 48",
+    "description": "Interior Systems Division 48 for automotive manufacturing"
+  },
+  {
+    "name": "Exterior Systems Division 49",
+    "description": "Exterior Systems Division 49 for automotive manufacturing"
+  },
+  {
+    "name": "Exterior Systems Division 50",
+    "description": "Exterior Systems Division 50 for automotive manufacturing"
+  },
+  {
+    "name": "Powertrain Systems Division 51",
+    "description": "Powertrain Systems Division 51 for automotive manufacturing"
+  },
+  {
+    "name": "Thermal Systems Division 52",
+    "description": "Thermal Systems Division 52 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 53",
+    "description": "Lighting Systems Division 53 for automotive manufacturing"
+  },
+  {
+    "name": "Thermal Systems Division 54",
+    "description": "Thermal Systems Division 54 for automotive manufacturing"
+  },
+  {
+    "name": "Exterior Systems Division 55",
+    "description": "Exterior Systems Division 55 for automotive manufacturing"
+  },
+  {
+    "name": "Interior Systems Division 56",
+    "description": "Interior Systems Division 56 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 57",
+    "description": "Lighting Systems Division 57 for automotive manufacturing"
+  },
+  {
+    "name": "Powertrain Systems Division 58",
+    "description": "Powertrain Systems Division 58 for automotive manufacturing"
+  },
+  {
+    "name": "Battery Systems Division 59",
+    "description": "Battery Systems Division 59 for automotive manufacturing"
+  },
+  {
+    "name": "Battery Systems Division 60",
+    "description": "Battery Systems Division 60 for automotive manufacturing"
+  },
+  {
+    "name": "Interior Systems Division 61",
+    "description": "Interior Systems Division 61 for automotive manufacturing"
+  },
+  {
+    "name": "Polymer Modules Division 62",
+    "description": "Polymer Modules Division 62 for automotive manufacturing"
+  },
+  {
+    "name": "Sensor Systems Division 63",
+    "description": "Sensor Systems Division 63 for automotive manufacturing"
+  },
+  {
+    "name": "Sensor Systems Division 64",
+    "description": "Sensor Systems Division 64 for automotive manufacturing"
+  },
+  {
+    "name": "Thermal Systems Division 65",
+    "description": "Thermal Systems Division 65 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 66",
+    "description": "Lighting Systems Division 66 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 67",
+    "description": "Lighting Systems Division 67 for automotive manufacturing"
+  },
+  {
+    "name": "Wiring Harness Division 68",
+    "description": "Wiring Harness Division 68 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 69",
+    "description": "Lighting Systems Division 69 for automotive manufacturing"
+  },
+  {
+    "name": "Lighting Systems Division 70",
+    "description": "Lighting Systems Division 70 for automotive manufacturing"
   }
 ]
