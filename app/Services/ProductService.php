@@ -14,28 +14,28 @@ class ProductService
 
     public function list($filters, $limit)
     {
-        return $this->repo->paginate($filters, $limit);
-    }
-
-    public function store($data)
-    {
-        return $this->repo->create($data);
+        return $this->repo->getAllProducts($filters, $limit);
     }
 
     public function show($id)
     {
-        return $this->repo->findById($id);
+        return $this->repo->getProductById($id);
     }
+    
+    // public function store($data)
+    // {
+    //     return $this->repo->create($data);
+    // }
 
-    public function update($id, $data)
-    {
-        $product = $this->repo->findById($id);
-        return $this->repo->update($product, $data);
-    }
+    // public function update($id, $data)
+    // {
+    //     $product = $this->repo->findById($id);
+    //     return $this->repo->update($product, $data);
+    // }
 
-    public function delete($id)
-    {
-        $product = $this->repo->findById($id);
-        return $this->repo->delete($product);
-    }
+    // public function delete($id)
+    // {
+    //     $product = $this->repo->findById($id);
+    //     return $this->repo->delete($product);
+    // }
 }

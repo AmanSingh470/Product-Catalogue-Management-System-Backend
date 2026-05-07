@@ -1,55 +1,48 @@
 <?php
+
 namespace App\Repositories;
 
 use App\Models\Product;
 
 class ProductRepository
 {
-    // public function getAll($limit = 10)
-    // {
-    //     return Product::with([
-    //         'category',
-    //         'segment',
-    //         'division',
-    //         'company',
-    //         'companyContactPerson',
-    //         'productMedia',
-    //     ])->paginate($limit);
-    // }
-
-    public function paginate($filters = [], $limit)
+    public function getAllProducts($filters, $limit)
     {
         $query = Product::with([
+            'segment:id,name',
+            'division:id,name',
+            'company:id,name',
+            'productMedia:id,product_id,image',
+        ])->select('id', 'title', 'segment_id', 'division_id', 'company_id');
+
+        if (! empty($filters['division'])) {
+            $query = $query->whereIn('division_id', $filters['division']);
+        }
+
+        if (! empty($filters['company'])) {
+            $query = $query->whereIn('company_id', $filters['company']);
+        }
+
+        if (! empty($filters['segment'])) {
+            $query = $query->whereIn('segment_id', $filters['segment']);
+        }
+
+        if (! empty($filters['search'])) {
+            $query = $query->where('title', 'like', '%' . $filters['search'] . '%');
+        }
+        return $query->paginate($limit);
+    }
+
+    public function getProductById($id)
+    {
+        return Product::with([
             'category',
             'segment',
             'division',
             'company',
             'companyContactPerson',
             'productMedia',
-        ]);
-
-        if (! empty($filters['division'])) {
-            $query->whereIn('division_id', $filters['division']);
-        }
-
-        if (! empty($filters['company'])) {
-            $query->whereIn('company_id', $filters['company']);
-        }
-
-        if (! empty($filters['segment'])) {
-            $query->whereIn('segment_id', $filters['segment']);
-        }
-
-        if (! empty($filters['search'])) {
-            $query->where('title', 'like', '%' . $filters['search'] . '%');
-        }
-
-        return $query->paginate($limit);
-    }
-
-    public function findById($id)
-    {
-        return Product::findOrFail($id);
+        ])->findOrFail($id);
     }
 
     public function create($data)
@@ -60,6 +53,7 @@ class ProductRepository
     public function update($product, $data)
     {
         $product->update($data);
+
         return $product;
     }
 

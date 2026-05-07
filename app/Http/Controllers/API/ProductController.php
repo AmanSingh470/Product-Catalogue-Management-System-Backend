@@ -2,7 +2,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\ProductResource;
+use App\Http\Resources\ProductDetailResource;
+use App\Http\Resources\ProductListResource;
 use App\Services\ProductService;
 use Illuminate\Http\Request;
 
@@ -68,9 +69,18 @@ class ProductController extends Controller
         $products = $this->service->list($filters, $limit);
 
         return response()->json([
-            'items'        => ProductResource::collection($products),
+            'items'        => ProductListResource::collection($products),
             'current_page' => $products->currentPage(),
             'hasMore'      => $products->hasMorePages(),
+        ]);
+    }
+    
+    public function show($id)
+    {
+        $product = $this->service->show($id);
+
+        return response()->json([
+            'item' => new ProductDetailResource($product)
         ]);
     }
 }
