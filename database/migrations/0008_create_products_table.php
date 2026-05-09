@@ -27,11 +27,7 @@ return new class extends Migration {
             $table->foreignId('contact_person_id')->nullable()
                 ->constrained('company_contact_persons')->nullOnDelete();
 
-            $table->text('main_advantages')->nullable();
-            $table->text('key_facts')->nullable();
-            $table->text('applications')->nullable();
-
-            $table->enum('status', ['active', 'inactive'])->default('active');
+            $table->enum('status', [1,2,3,4])->default(1);
 
             $table->timestamps();
         });

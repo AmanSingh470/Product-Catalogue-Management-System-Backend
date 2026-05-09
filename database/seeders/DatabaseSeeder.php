@@ -16,6 +16,10 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             ProductMediaSeeder::class,
             DivisionMediaSeeder::class,
+            ApplicationSeeder::class,
+            MainAdvantageSeeder::class,
+            IntellectualPropertySeeder::class,
+            KeyFactSeeder::class,
         ]);
     }
 }

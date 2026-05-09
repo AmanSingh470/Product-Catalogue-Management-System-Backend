@@ -42,6 +42,10 @@ class ProductRepository
             'company',
             'companyContactPerson',
             'productMedia',
+            'mainAdvantage',
+            'keyFact',
+            'intellectualProperty',
+            'application'
         ])->findOrFail($id);
     }
 

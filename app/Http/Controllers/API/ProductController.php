@@ -2,8 +2,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\ProductDetailResource;
 use App\Http\Resources\ProductListResource;
+use App\Http\Resources\ProductDetailResource;
 use App\Services\ProductService;
 use Illuminate\Http\Request;
 

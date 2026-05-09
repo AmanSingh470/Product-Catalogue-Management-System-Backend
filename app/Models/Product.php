@@ -10,32 +10,6 @@ class Product extends Model
     use HasFactory;
     protected $table = 'products';
 
-    protected $fillable = [
-        'title',
-        'description',
-        'category_id',
-        'segment_id',
-        'division_id',
-        'company_id',
-        'contact_person_id',
-        'main_advantages',
-        'key_facts',
-        'applications',
-        'status'
-    ];
-
-    protected $casts = [
-        'category_id' => 'integer',
-        'segment_id' => 'integer',
-        'division_id' => 'integer',
-        'company_id' => 'integer',
-        'contact_person_id' => 'integer',
-    ];
-
-    protected $attributes = [
-        'status' => 'active',
-    ];
-
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -64,5 +38,21 @@ class Product extends Model
     public function productMedia()
     {
         return $this->hasMany(ProductMedia::class, 'product_id');
+    }
+    public function intellectualProperty()
+    {
+        return $this->hasMany(IntellectualProperty::class, 'product_id');
+    }
+    public function keyFact()
+    {
+        return $this->hasMany(KeyFact::class, 'product_id');
+    }
+    public function mainAdvantage()
+    {
+        return $this->hasMany(MainAdvantage::class, 'product_id');
+    }
+    public function application()
+    {
+        return $this->hasMany(Application::class, 'product_id');
     }
 }
