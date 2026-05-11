@@ -16,19 +16,6 @@ class ProductController extends Controller
         $this->service = $service;
     }
 
-    // public function index()
-    // {
-    //     return ProductResource::collection(
-    //         $this->service->list()
-    //     );
-
-    //     // // or
-    //     // $products = $this->service->list();
-    //     // return $products->map(function ($product) {
-    //     //     return new ProductResource($product);
-    //     // });
-    // }
-
     public function index(Request $request)
     {
         $limit = 32;

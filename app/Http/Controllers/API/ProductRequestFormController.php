@@ -3,7 +3,7 @@ namespace App\Http\Controllers\API;
 
 
 use Illuminate\Http\Request;
-use App\Models\ProductRequests;
+use App\Models\ProductRequest;
 use App\Http\Controllers\Controller;
 class ProductRequestFormController extends Controller
 {
@@ -18,7 +18,7 @@ class ProductRequestFormController extends Controller
             'description' => 'nullable|string',
         ]);        
 
-        $product = ProductRequests::create($validated);
+        $product = ProductRequest::create($validated);
 
         return response()->json([
             'status' => 'success',

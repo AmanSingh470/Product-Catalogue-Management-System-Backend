@@ -16,7 +16,8 @@ class ProductMediaSeeder extends Seeder
         foreach ($ProductMedias as $ProductMedia) {
             $data[] = [
                 'product_id' => $ProductMedia['product_id'],
-                'image'      => $ProductMedia['image'],
+                'media_type' => $ProductMedia['media_type'],
+                'media_url'  => $ProductMedia['media_url'],
                 'created_at' => now(),
                 'updated_at' => now(),
             ];

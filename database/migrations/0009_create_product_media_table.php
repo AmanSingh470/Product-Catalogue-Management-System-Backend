@@ -4,7 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     public function up(): void
     {
         Schema::create('product_media', function (Blueprint $table) {
@@ -13,11 +14,12 @@ return new class extends Migration {
             $table->foreignId('product_id')->nullable()
                 ->constrained('products')
                 ->cascadeOnDelete();
-
-            $table->string('file', 500)->nullable();
-            $table->string('image', 500)->nullable();
-            $table->string('video', 500)->nullable();
-
+            $table->enum('media_type', [
+                'file',
+                'image',
+                'video',
+            ]);
+            $table->string('media_url', 500);
             $table->timestamps();
         });
     }

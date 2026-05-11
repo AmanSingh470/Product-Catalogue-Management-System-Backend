@@ -12,7 +12,7 @@ class ProductRepository
             'segment:id,name',
             'division:id,name',
             'company:id,name',
-            'productMedia:id,product_id,image',
+            'productMedia:id,product_id,media_url,media_type',
         ])->select('id', 'title', 'segment_id', 'division_id', 'company_id');
 
         if (! empty($filters['division'])) {

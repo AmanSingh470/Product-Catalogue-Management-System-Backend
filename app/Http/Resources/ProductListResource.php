@@ -13,7 +13,7 @@ class ProductListResource extends JsonResource
             'segment'                => $this->segment->name,
             'division'               => $this->division->name,
             'company'                => $this->company->name,
-            'image_url'              => $this->productMedia->first()?->image,
+            'thumbnail'              => $this->productMedia->where('media_type', 'image')->pluck('media_url')->first(),
         ];
     }
 }
