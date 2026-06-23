@@ -10,6 +10,10 @@ class IntellectualProperty extends Model
     use HasFactory;
 
     protected $table = 'intellectual_properties';
+    protected $fillable = [
+        'product_id',
+        'description',
+    ];
 
     public function product()
     {

@@ -8,8 +8,6 @@ use App\Models\Segment;
 use App\Models\Company;
 use App\Models\CompanyContactPerson;
 
-use Illuminate\Support\Facades\Log;
-
 class FilterProductRepository
 {
     public function getAll()

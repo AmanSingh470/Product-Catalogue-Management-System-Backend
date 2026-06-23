@@ -10,7 +10,11 @@ class MainAdvantage extends Model
     use HasFactory;
 
     protected $table = 'main_advantages';
-
+    protected $fillable = [
+        'product_id',
+        'title',
+        'description'
+    ];
     public function product()
     {
         return $this->belongsTo(Product::class);

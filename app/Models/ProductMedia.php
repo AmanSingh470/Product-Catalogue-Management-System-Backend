@@ -9,8 +9,14 @@ class ProductMedia extends Model
     use HasFactory;
     protected $table = 'product_media';
 
+    protected $fillable = [
+        'product_id',
+        'media_type',
+        'media_url',
+    ];
+
     public function products()
     {
-        return $this->hasMany(Product::class);
+        return $this->belongsTo(Product::class);
     }
 }

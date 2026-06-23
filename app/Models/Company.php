@@ -10,8 +10,23 @@ class Company extends Model
 
     protected $table = 'companies';
 
+    protected $fillable = [
+        'name'
+    ];
+
+    protected $casts = [
+        'updated_at' => 'datetime',
+        'created_at' => 'datetime',
+    ];
+
     public function products()
     {
         return $this->hasMany(Product::class);
     }
+
+    public function contactPersons()
+    {
+        return $this->hasMany(CompanyContactPerson::class, 'company_id');
+    }
+
 }

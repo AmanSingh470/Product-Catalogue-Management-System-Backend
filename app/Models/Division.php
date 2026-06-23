@@ -10,6 +10,16 @@ class Division extends Model
     use HasFactory;
     protected $table = 'divisions';
 
+    protected $fillable = [
+        'name',
+        'description'
+    ];
+
+    protected $casts = [
+        'updated_at' => 'datetime',
+        'created_at' => 'datetime',
+    ];
+
     public function products()
     {
         return $this->hasMany(Product::class);

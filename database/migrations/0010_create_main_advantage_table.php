@@ -15,7 +15,6 @@ return new class extends Migration
                 ->constrained('products')
                 ->onDelete('cascade');
 
-            $table->string('title');
             $table->text('description')->nullable();
 
             $table->timestamps();

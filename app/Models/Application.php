@@ -13,7 +13,7 @@ class Application extends Model
 
     protected $fillable = [
         'product_id',
-        'application'
+        'description'
     ];
 
     public function product()
